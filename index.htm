@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="app">
-        <div class="layer home active">
+        <div class="layer home">
             <div class="header">
                 <img src="assets/logo-black.png" alt="logoimg" class="logoimg">
             </div>
@@ -29,7 +29,7 @@
             <img src="assets/jacket.png" alt="loginimg" class="loginimg">
             <div class="signin-container">
                 <h1>Log In  <span class="icons"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></span></h1>
-                <form id="signup">
+                <form id="loginform">
                 
                     <div class="pure-control-group">
                         <input id="email" type="username" name="username" placeholder="User Id">
@@ -41,12 +41,137 @@
                 </form>
             </div>
         </div>
-        <div class="layer signup"></div>
-        <div class="layer browse"></div>
+        <div class="layer signup">
+            <div class="header">
+                <div class="backicon"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></div>
+                <img src="assets/logo-black.png" alt="logoimg" class="logoimg">
+            </div>
+            
+            <div class="signin-container">
+                <h1>Sign Up  <span class="icons"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></span></h1>
+                <form id="signupform">
+                    
+                    <div class="pure-control-group">
+                        <input id="email" type="email" name="email" placeholder="Email Address"> 
+                    </div>
+                    <div class="pure-control-group">
+                        <input id="name" type="username" name="username" placeholder="User Id">
+                    </div>
+                    <div class="pure-control-group">
+                        <input id="password" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="pure-control-group">
+                        <input id="confirm-password" type="password" name="password" placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="login-button">Create Account</button>
+                </form>
+            </div>
+        </div>
+        <div class="layer browse active">
+            <div class="browse-header">
+                <img src="assets/logo-black.png" alt="logoimg" class="logoimg">
+                <div class="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input type="text" class="search-bar" style="font-family:FontAwesome">
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-box on">
+                    <div class="category-icon">
+                        <img src="assets/icon3.png" alt="top" class="iconimg">
+                    </div>
+                    <p>Top</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">
+                        <img src="assets/icon2.png" alt="bot" class="iconimg">
+                    </div>
+                    <p>Bottom</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">
+                        <img src="assets/icon1.png" alt="acc" class="iconimg">
+                    </div>
+                    <p>Acc</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">
+                        <img src="assets/icon4.png" alt="shoe" class="iconimg">
+                    </div>
+                    <p>Shoes</p>
+                </div>
+            </div>
+            <div class="browse-container">
+                <div class="product">
+                    <img src="assets/jacket.jpg" alt="product" class="product-img">
+                    <div class="pro-title">
+                        <h1>Customized Jacket</h1>
+                        <p>John Doe<br><span class="price">$75.00</span></p>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/jacket.jpg" alt="product" class="product-img">
+                    <div class="pro-title">
+                        <h1>Customized Jacket</h1>
+                        <p>John Doe<br><span class="price">$75.00</span></p>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/jacket.jpg" alt="product" class="product-img">
+                    <div class="pro-title">
+                        <h1>Customized Jacket</h1>
+                        <p>John Doe<br><span class="price">$75.00</span></p>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/jacket.jpg" alt="product" class="product-img">
+                    <div class="pro-title">
+                        <h1>Customized Jacket</h1>
+                        <p>John Doe<br><span class="price">$75.00</span></p>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/jacket.jpg" alt="product" class="product-img">
+                    <div class="pro-title">
+                        <h1>Customized Jacket</h1>
+                        <p>John Doe<br><span class="price">$75.00</span></p>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assets/jacket.jpg" alt="product" class="product-img">
+                    <div class="pro-title">
+                        <h1>Customized Jacket</h1>
+                        <p>John Doe<br><span class="price">$75.00</span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="nav home nav-on">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="nav cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="nav fav">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="nav profile">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
         <div class="layer detail"></div>
         <div class="layer edit"></div>
         <div class="layer profile"></div>
         <div class="layer add"></div>
+        <div class="layer "></div>
+        <div class="layer "></div>
 
 
     </div>

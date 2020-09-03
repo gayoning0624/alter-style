@@ -2,11 +2,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
 
 
+
 $main-black-color:#1c1c1c;
 $main-dark-color:#333333;
 $main-gray-color:#696969;
 $main-light-color:#a8a8a8;
-$main-white-color:#ededed;
+$main-white-color:#ffffff;
 $main-green-color: #37884e;
 
 @mixin btns {
@@ -28,13 +29,17 @@ $main-green-color: #37884e;
     box-sizing:border-box;
     text-decoration: none;
 }
-
+.search{
+    font-family: 'FontAwesome';
+}
 body{
     font-family: 'Questrial', sans-serif;
 
 }
 .app{
     position: relative;
+    
+
 }
 .active{
     display: block !important;
@@ -42,6 +47,37 @@ body{
 .layer{
     display: none;
     min-height: 100vh;
+}
+.main-footer{
+    position: fixed;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.04);
+    bottom: 0;
+    display: flex;
+    height: 4.5em;
+    
+    width:100%;
+    .nav-on{
+        background: $main-black-color !important;
+        i{
+            color: $main-white-color;
+        }
+    }
+    .nav{
+        
+        flex-direction: column;
+        display: flex;
+        flex-grow: 1;
+        
+        background: $main-white-color;
+        i{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position:relative;
+            top: calc(50% - 10px);
+            justify-content: center;
+        }
+    }
 }
 .home{
     background:linear-gradient(160deg, $main-white-color, $main-white-color 50%, $main-black-color 50%, $main-black-color);
@@ -119,8 +155,8 @@ body{
     form{
         input{
             border: none;
-            color: $main-gray-color;
-            border-bottom: thin $main-gray-color solid;
+            color: $main-light-color;
+            border-bottom: thin $main-light-color solid;
             background: transparent;
             padding: 2.5em 1em 1em 0em;
             font-size: 1em;
@@ -143,5 +179,166 @@ body{
             }
         }
     }
+    }
+}
+
+.signup{
+    background: $main-white-color;
+    .header{
+        .logoimg{
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2em;
+            display: block;
+            width: 35%;    
+        }
+        .backicon{
+            font-size: 1.8em;
+           top: 1em;
+           left: 0.5em;
+            position: absolute;
+            color:$main-black-color;
+        }
+        
+    }
+    .signin-container{
+        margin: 3em;
+        h1{
+            margin-top: 3em;
+            font-size:1.5em;
+            
+            .icons{
+                padding-left: 0.5em;
+            }
+        }
+        
+        form{
+            margin-top: 1em;
+            input{
+                border: none;
+                color: $main-light-color;
+                border-bottom: thin $main-light-color solid;
+                background: transparent;
+                padding: 2.5em 1em 1em 0em;
+                font-size: 1em;
+                width: 100%;
+                &:focus{
+                    outline: none !important;
+                }
+            }
+            button{
+                @include btns;
+                color: $main-white-color;
+                font-size: 1em;
+                width: 75%;
+                position: absolute;
+                bottom:4em;
+                background: $main-black-color;
+                border: none;
+                font-weight: 300;
+                
+                &:focus{
+                    outline: none !important;
+                }
+            }
+        }
+    }
+   
+}
+.browse{
+    .browse-header{
+        display: flex;
+        margin: 1.5em;
+        justify-content: space-between;
+        
+        .search{
+            background-color: $main-white-color;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 30px;
+            input{
+                border: none;
+            }
+            button{
+                border: none;
+                background: transparent;
+                margin:0.5em;
+            }
+        }
+        .logoimg{
+           
+            display: block;
+            width: 30%;    
+        }
+    }
+  
+  
+    .category{
+        .category-box{
+            text-align:center;
+            p{
+                margin-top: 1em;
+                font-size: 0.8em;
+            }
+        }
+        .on{
+            p{
+                color: $main-green-color !important;
+            }
+        }
+        display: flex;
+        margin: 1em;
+        justify-content: space-around;
+        .category-icon{
+
+            // border: 1px red solid;
+            border-radius: 100%;
+            background: $main-white-color;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+            display: block;
+            // padding: 0.5em;
+            flex: 0 0 4em;
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .iconimg{
+                // border: 1px green solid;
+                display: block;
+                width:60%;
+         
+            
+            }
+        }
+        
+    }
+
+    .browse-container{
+        // border: 1px red solid;
+        display: flex;
+        margin: 1em;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+        .product{
+            
+            width: 50%;
+            box-sizing: border-box;
+            padding: 0.5em;
+            h1{
+                font-size: 1.1em;
+                font-weight: bolder;
+            }
+            p{
+                color: $main-gray-color;
+                line-height: 20px;
+                .price{
+                    color: $main-green-color;
+                    font-weight: bolder;
+                }
+            }
+            .product-img{
+               width: 100%;
+               border-radius: 3px 3px 3px 30px;
+            }
+        }
     }
 }

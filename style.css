@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+.search {
+  font-family: 'FontAwesome';
+}
+
 body {
   font-family: 'Questrial', sans-serif;
 }
@@ -26,13 +30,62 @@ body {
   min-height: 100vh;
 }
 
+.main-footer {
+  position: fixed;
+  -webkit-box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.04);
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4.5em;
+  width: 100%;
+}
+
+.main-footer .nav-on {
+  background: #1c1c1c !important;
+}
+
+.main-footer .nav-on i {
+  color: #ffffff;
+}
+
+.main-footer .nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: #ffffff;
+}
+
+.main-footer .nav i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+  top: calc(50% - 10px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .home {
-  background: linear-gradient(160deg, #ededed, #ededed 50%, #1c1c1c 50%, #1c1c1c);
+  background: linear-gradient(160deg, #ffffff, #ffffff 50%, #1c1c1c 50%, #1c1c1c);
 }
 
 .home p {
   text-align: center;
-  color: #ededed;
+  color: #ffffff;
   padding: 2em;
   line-height: 1.5em;
 }
@@ -61,7 +114,7 @@ body {
   color: #1c1c1c;
   font-weight: bolder;
   border-radius: 22px;
-  background: #ededed;
+  background: #ffffff;
 }
 
 .home .bottons .login-btn {
@@ -75,11 +128,11 @@ body {
   font-weight: bolder;
   border-radius: 22px;
   margin-top: 1em;
-  background: #ededed;
+  background: #ffffff;
 }
 
 .login {
-  background: linear-gradient(160deg, #1c1c1c, #1c1c1c 50%, #ededed 50%, #ededed);
+  background: linear-gradient(160deg, #1c1c1c, #1c1c1c 50%, #ffffff 50%, #ffffff);
 }
 
 .login .header .logoimg {
@@ -95,7 +148,7 @@ body {
   top: 1em;
   left: 0.5em;
   position: absolute;
-  color: #ededed;
+  color: #ffffff;
 }
 
 .login .loginimg {
@@ -119,8 +172,8 @@ body {
 
 .login .signin-container form input {
   border: none;
-  color: #696969;
-  border-bottom: thin #696969 solid;
+  color: #a8a8a8;
+  border-bottom: thin #a8a8a8 solid;
   background: transparent;
   padding: 2.5em 1em 1em 0em;
   font-size: 1em;
@@ -141,7 +194,7 @@ body {
   color: #1c1c1c;
   font-weight: bolder;
   border-radius: 22px;
-  color: #ededed;
+  color: #ffffff;
   font-size: 1em;
   width: 100%;
   margin-top: 3em;
@@ -152,5 +205,197 @@ body {
 
 .login .signin-container form button:focus {
   outline: none !important;
+}
+
+.signup {
+  background: #ffffff;
+}
+
+.signup .header .logoimg {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  display: block;
+  width: 35%;
+}
+
+.signup .header .backicon {
+  font-size: 1.8em;
+  top: 1em;
+  left: 0.5em;
+  position: absolute;
+  color: #1c1c1c;
+}
+
+.signup .signin-container {
+  margin: 3em;
+}
+
+.signup .signin-container h1 {
+  margin-top: 3em;
+  font-size: 1.5em;
+}
+
+.signup .signin-container h1 .icons {
+  padding-left: 0.5em;
+}
+
+.signup .signin-container form {
+  margin-top: 1em;
+}
+
+.signup .signin-container form input {
+  border: none;
+  color: #a8a8a8;
+  border-bottom: thin #a8a8a8 solid;
+  background: transparent;
+  padding: 2.5em 1em 1em 0em;
+  font-size: 1em;
+  width: 100%;
+}
+
+.signup .signin-container form input:focus {
+  outline: none !important;
+}
+
+.signup .signin-container form button {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 1.3em;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #1c1c1c;
+  font-weight: bolder;
+  border-radius: 22px;
+  color: #ffffff;
+  font-size: 1em;
+  width: 75%;
+  position: absolute;
+  bottom: 4em;
+  background: #1c1c1c;
+  border: none;
+  font-weight: 300;
+}
+
+.signup .signin-container form button:focus {
+  outline: none !important;
+}
+
+.browse .browse-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.browse .browse-header .search {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.browse .browse-header .search input {
+  border: none;
+}
+
+.browse .browse-header .search button {
+  border: none;
+  background: transparent;
+  margin: 0.5em;
+}
+
+.browse .browse-header .logoimg {
+  display: block;
+  width: 30%;
+}
+
+.browse .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.browse .category .category-box {
+  text-align: center;
+}
+
+.browse .category .category-box p {
+  margin-top: 1em;
+  font-size: 0.8em;
+}
+
+.browse .category .on p {
+  color: #37884e !important;
+}
+
+.browse .category .category-icon {
+  border-radius: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 4em;
+          flex: 0 0 4em;
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.browse .category .category-icon .iconimg {
+  display: block;
+  width: 60%;
+}
+
+.browse .browse-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+
+.browse .browse-container .product {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5em;
+}
+
+.browse .browse-container .product h1 {
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.browse .browse-container .product p {
+  color: #696969;
+  line-height: 20px;
+}
+
+.browse .browse-container .product p .price {
+  color: #37884e;
+  font-weight: bolder;
+}
+
+.browse .browse-container .product .product-img {
+  width: 100%;
+  border-radius: 3px 3px 3px 30px;
 }
 /*# sourceMappingURL=style.css.map */
