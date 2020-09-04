@@ -22,6 +22,16 @@ $main-green-color: #37884e;
             border-radius: 22px;
 }
 
+@mixin trash_icon{
+        border-radius: 50%;
+        background-color: black;
+        color:white;
+        font-size: 1em;
+        padding:1em;
+
+    
+}
+
 *{
 	margin:0;
 	padding:0;
@@ -56,6 +66,16 @@ h1{
     .icons{
         padding-left: 0.5em;
     }
+}
+h3{
+    font-size: 1em;
+    font-weight: bolder;
+
+}
+h6{
+    font-size: .9em;
+    font-weight: bolder;
+    color: $main-gray-color;
 }
 .browse-container{
     // border: 1px red solid;
@@ -431,5 +451,76 @@ h1{
                 }
             }
         }
+    }
+}
+//my chart page------------------------------------
+.checkout{
+        border: thin $main-gray-color solid;
+        padding:1em;
+        .header{
+            text-align: center;
+            padding: 1em;
+            // border: thin grey solid;
+        }
+        .subtitle{
+            padding-top: 1em;
+        }
+        .layerone{
+    
+            border-bottom: 5px $main-light-color solid;
+    
+        .cartsec1{
+            display: flex;
+            // border: thin yellow solid;
+            height: 30vh;
+            position: relative;
+        .cartpic{
+            flex: 0 0 40%;
+            // border: thin blue  solid;
+    
+            padding:1em;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+
+            }
+        .cartdes{
+                padding-left:1em;
+                flex: 0 0 60%;
+                // border: thin red  solid;
+                h3{
+                    font-weight: 900;
+                    margin-top:3em;
+                }
+                h6{
+                    padding-top: 1em;
+                 
+                    color:$main-light-color;
+                }
+            }
+
+            .price{
+                color:$main-green-color;
+                font-weight: bolder;
+
+            }
+        
+            .trashicon{
+                position: absolute;
+                bottom: 10%;
+                right:10%;
+                    
+              
+                   
+                .fa-trash-alt{
+
+                   @include trash_icon;
+             
+                }
+            } 
+
+        }
+    
     }
 }

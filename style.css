@@ -38,6 +38,17 @@ h1 .icons {
   padding-left: 0.5em;
 }
 
+h3 {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+h6 {
+  font-size: .9em;
+  font-weight: bolder;
+  color: #696969;
+}
+
 .browse-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,5 +489,79 @@ h1 .icons {
 .fav .fav-container .browse-container .product .product-img {
   width: 100%;
   border-radius: 3px 3px 3px 30px;
+}
+
+.checkout {
+  border: thin #696969 solid;
+  padding: 1em;
+}
+
+.checkout .header {
+  text-align: center;
+  padding: 1em;
+}
+
+.checkout .subtitle {
+  padding-top: 1em;
+}
+
+.checkout .layerone {
+  border-bottom: 5px #a8a8a8 solid;
+}
+
+.checkout .layerone .cartsec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  position: relative;
+}
+
+.checkout .layerone .cartsec1 .cartpic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  padding: 1em;
+}
+
+.checkout .layerone .cartsec1 .cartpic img {
+  display: block;
+  width: 100%;
+}
+
+.checkout .layerone .cartsec1 .cartdes {
+  padding-left: 1em;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.checkout .layerone .cartsec1 .cartdes h3 {
+  font-weight: 900;
+  margin-top: 3em;
+}
+
+.checkout .layerone .cartsec1 .cartdes h6 {
+  padding-top: 1em;
+  color: #a8a8a8;
+}
+
+.checkout .layerone .cartsec1 .price {
+  color: #37884e;
+  font-weight: bolder;
+}
+
+.checkout .layerone .cartsec1 .trashicon {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.checkout .layerone .cartsec1 .trashicon .fa-trash-alt {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
 }
 /*# sourceMappingURL=style.css.map */
