@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
 
 
 $main-black-color:#1c1c1c;
@@ -341,4 +342,77 @@ body{
             }
         }
     }
+}
+
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    .item-detail-img-container{
+        overflow:hidden;
+        position:relative;
+        height: 25em;
+        border-radius: 0 0 0 3em;
+        img{
+            position: absolute;
+            left:-10000%; right: -10000%; 
+            top: -10000%; bottom: -10000%;
+            margin: auto auto;
+            max-width: 11%;
+            max-height: 25em;
+            -webkit-transform:scale(10);
+            transform: scale(10);
+        }
+    }
+    .item-detail-content-wrap{
+        padding: 1em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-detail-header-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 0 0 100%;
+        .item-detail-title{
+            flex: 1 0 auto;
+            font-size: 1em;
+            font-family: 'Lato', sans-serif;
+            font-weight: 600;
+            color: $main-black-color;
+            
+        }
+        .item-detail-price{
+            flex: 0 0 auto;
+            font-family: 'Lato', sans-serif;
+            color: #37884E;
+            font-size: 1.5em;
+        }
+    }
+    .item-detail-subhead-container{
+        flex: 0 0 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .review-star-container{
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 0.2em 0;
+        .avgRating{
+            color: $main-gray-color;
+            padding: 0 0.5em 0 0.1em;
+        }
+        img{
+            width: 1em;
+            margin: 0 0.1em;
+        }
+    }
+    .fav-container{
+        img{
+            width: 2em;
+            margin: 0.3em;
+        }
+    }
+
 }

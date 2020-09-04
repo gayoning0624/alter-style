@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
 * {
   margin: 0;
@@ -397,5 +398,118 @@ body {
 .browse .browse-container .product .product-img {
   width: 100%;
   border-radius: 3px 3px 3px 30px;
+}
+
+.detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.detail .item-detail-img-container {
+  overflow: hidden;
+  position: relative;
+  height: 25em;
+  border-radius: 0 0 0 3em;
+}
+
+.detail .item-detail-img-container img {
+  position: absolute;
+  left: -10000%;
+  right: -10000%;
+  top: -10000%;
+  bottom: -10000%;
+  margin: auto auto;
+  max-width: 11%;
+  max-height: 25em;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+}
+
+.detail .item-detail-content-wrap {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.detail .item-detail-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.detail .item-detail-header-container .item-detail-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.detail .item-detail-header-container .item-detail-price {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-family: 'Lato', sans-serif;
+  color: #37884E;
+  font-size: 1.5em;
+}
+
+.detail .item-detail-subhead-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.detail .review-star-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2em 0;
+}
+
+.detail .review-star-container .avgRating {
+  color: #696969;
+  padding: 0 0.5em 0 0.1em;
+}
+
+.detail .review-star-container img {
+  width: 1em;
+  margin: 0 0.1em;
+}
+
+.detail .fav-container img {
+  width: 2em;
+  margin: 0.3em;
 }
 /*# sourceMappingURL=style.css.map */
