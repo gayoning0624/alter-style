@@ -57,6 +57,8 @@ h1{
         padding-left: 0.5em;
     }
 }
+
+//product thumbnail groball--------------------
 .browse-container{
     // border: 1px red solid;
     display: flex;
@@ -85,6 +87,7 @@ h1{
         }
     }
 }
+
 //footer ---------------------------
 .main-footer{
     position: fixed;
@@ -431,5 +434,58 @@ h1{
                 }
             }
         }
+    }
+}
+///profile------------------------
+.profile{
+    border:thin red solid;
+    background-image: linear-gradient(130deg,transparent 25em, white 25em),
+                linear-gradient(-160deg,black 16em, white 16em);
+    .profilehead{
+        padding-top: 3em;
+        display: flex;
+        margin: 1.5em;
+        box-sizing: border-box;
+        .profileimg{
+            width: 40%;
+            border-radius: 3px 3px 3px 30px;
+        }
+        .profiledp{
+            margin-left: 1em;
+            h3{
+                color: white;
+                margin-bottom: 0.5em;
+                .profile-edit{
+                    padding: 1em;
+                    font-size: 0.9em;
+                }
+            }
+            p{
+                
+                i{
+                    margin-right: 0.5em;
+                }
+                color: $main-gray-color;
+                line-height: 2em;
+            }
+        }
+    }
+    .bio{
+        margin: 1.5em;
+        p{
+            line-height: 1.5em;
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+    }
+    
+    .myproduct{
+        margin: 1.5em;
+    }
+    
+    .main-header{
+        background: black !important;
+        color: white !important;
+        
     }
 }
