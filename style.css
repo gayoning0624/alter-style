@@ -493,6 +493,9 @@ h6 {
 
 .checkout {
   border: thin #696969 solid;
+}
+
+.checkout .main-checkout {
   padding: 1em;
 }
 
@@ -506,14 +509,14 @@ h6 {
 }
 
 .checkout .layerone {
-  border-bottom: 5px #a8a8a8 solid;
+  border-bottom: 1px #a8a8a8 solid;
 }
 
 .checkout .layerone .cartsec1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 30vh;
+  height: 25vh;
   position: relative;
 }
 
@@ -553,7 +556,7 @@ h6 {
 
 .checkout .layerone .cartsec1 .trashicon {
   position: absolute;
-  bottom: 10%;
+  bottom: 11%;
   right: 10%;
 }
 
@@ -563,5 +566,47 @@ h6 {
   color: white;
   font-size: 1em;
   padding: 1em;
+}
+
+.checkout .shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  border-top: thin #a8a8a8 solid;
+}
+
+.checkout .shipping h6 {
+  color: #a8a8a8;
+}
+
+.checkout .total {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.checkout .total .blacktotal {
+  font-size: 1.5em;
+}
+
+.checkout .total .blacktotal h3 {
+  color: black;
+  font-weight: bolder;
+}
+
+.checkout .total h3 {
+  font-weight: 900;
+  color: #37884e;
+  font-size: 1.5em;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=style.css.map */

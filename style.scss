@@ -455,24 +455,29 @@ h6{
 }
 //my chart page------------------------------------
 .checkout{
-        border: thin $main-gray-color solid;
+    .main-checkout{
         padding:1em;
+    }
+        border: thin $main-gray-color solid;
+     
         .header{
             text-align: center;
             padding: 1em;
             // border: thin grey solid;
+           
+            
         }
         .subtitle{
             padding-top: 1em;
         }
         .layerone{
     
-            border-bottom: 5px $main-light-color solid;
+            border-bottom: 1px $main-light-color solid;
     
         .cartsec1{
             display: flex;
             // border: thin yellow solid;
-            height: 30vh;
+            height: 25vh;
             position: relative;
         .cartpic{
             flex: 0 0 40%;
@@ -508,7 +513,7 @@ h6{
         
             .trashicon{
                 position: absolute;
-                bottom: 10%;
+                bottom: 11%;
                 right:10%;
                     
               
@@ -523,4 +528,37 @@ h6{
         }
     
     }
+    .shipping{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        border-top: thin $main-light-color solid;
+        h6{
+            color:$main-light-color;
+        }
+    }
+    .total{
+        padding:0 1em;
+        display: flex;
+        justify-content: space-between;
+    
+        margin-bottom: 5em;
+        .blacktotal{
+            font-size: 1.5em;
+            h3{
+                color:black;
+                font-weight: bolder;
+            }
+        }
+        h3{
+            font-weight: 900;
+            color:$main-green-color;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+      
+      
+        
+    }
+  
 }
