@@ -609,4 +609,70 @@ h6 {
   font-size: 1.5em;
   font-weight: bolder;
 }
+
+.layer-add {
+  padding: 1em 2em;
+}
+
+.layer-add .header {
+  text-align: center;
+  padding: 1em;
+}
+
+.layer-add .subtitle {
+  padding-top: 1em;
+}
+
+.layer-add .productimage {
+  margin-top: 2em;
+}
+
+.layer-add .productimage .fa-camera-retro {
+  padding: .9em 1.5em;
+  border: thin #a8a8a8 solid;
+  border-radius: 0 0 0 1em;
+  color: #a8a8a8;
+  margin: 1em 0em;
+}
+
+.layer-add .form-group {
+  margin-bottom: 1em;
+}
+
+.layer-add .form-group label {
+  display: block;
+  padding-bottom: 0.3em;
+}
+
+.layer-add .form-group input {
+  padding: .5em;
+  border: thin #a8a8a8 solid;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.layer-add .form-group textarea {
+  width: 100%;
+  border: thin #a8a8a8 solid;
+  border-radius: 3px;
+}
+
+.layer-add .secbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3em 2em;
+}
+
+.layer-add .secbutton .btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+  padding: .7em;
+  border: thin #a8a8a8 solid;
+  border-radius: .5em;
+}
 /*# sourceMappingURL=style.css.map */

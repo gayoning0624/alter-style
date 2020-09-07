@@ -562,3 +562,69 @@ h6{
     }
   
 }
+//------------------add listing page-------------
+.layer-add{
+
+    padding:1em 2em;
+    .header{
+        text-align: center;
+        padding: 1em;
+        // border: thin grey solid;
+       
+        
+    }
+    .subtitle{
+        padding-top: 1em;
+    }
+    .productimage{
+        margin-top: 2em;
+        
+        .fa-camera-retro{
+            padding:.9em 1.5em;
+            border: thin $main-light-color solid;
+            border-radius: 0 0 0 1em;
+            color: $main-light-color;
+            margin: 1em 0em;
+        
+        }
+    }
+    .form-group{
+        margin-bottom: 1em;
+        label{
+            display: block;
+            padding-bottom: 0.3em;
+        }
+        input{
+            padding: .5em;
+            border:thin $main-light-color solid;
+            border-radius: 3px;
+            width:100%;
+          
+        }
+        textarea{
+            width:100%;
+            border: thin $main-light-color solid;
+            border-radius: 3px;
+        }
+        
+      
+        
+    }
+    .secbutton{
+        display:flex;
+        justify-content: space-between;
+        margin: 3em 2em;
+      
+        .btn{
+            flex: 0 0 45%;
+    
+            padding:.7em;
+            border:thin $main-light-color solid;
+            border-radius: .5em;
+           
+            
+        }
+    }
+
+
+}
