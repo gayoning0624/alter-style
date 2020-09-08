@@ -38,6 +38,17 @@ h1 .icons {
   padding-left: 0.5em;
 }
 
+h3 {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+h6 {
+  font-size: .9em;
+  font-weight: bolder;
+  color: #696969;
+}
+
 .browse-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,5 +716,190 @@ h1 .icons {
 .setting .setting-list ul li i {
   font-size: 1.5em;
   color: #696969;
+}
+
+.checkout {
+  border: thin #696969 solid;
+}
+
+.checkout .main-checkout {
+  padding: 1em;
+}
+
+.checkout .header {
+  text-align: center;
+  padding: 1em;
+}
+
+.checkout .subtitle {
+  padding-top: 1em;
+}
+
+.checkout .layerone {
+  border-bottom: 1px #a8a8a8 solid;
+}
+
+.checkout .layerone .cartsec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25vh;
+  position: relative;
+}
+
+.checkout .layerone .cartsec1 .cartpic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  padding: 1em;
+}
+
+.checkout .layerone .cartsec1 .cartpic img {
+  display: block;
+  width: 100%;
+}
+
+.checkout .layerone .cartsec1 .cartdes {
+  padding-left: 1em;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.checkout .layerone .cartsec1 .cartdes h3 {
+  font-weight: 900;
+  margin-top: 3em;
+}
+
+.checkout .layerone .cartsec1 .cartdes h6 {
+  padding-top: 1em;
+  color: #a8a8a8;
+}
+
+.checkout .layerone .cartsec1 .price {
+  color: #37884e;
+  font-weight: bolder;
+}
+
+.checkout .layerone .cartsec1 .trashicon {
+  position: absolute;
+  bottom: 11%;
+  right: 10%;
+}
+
+.checkout .layerone .cartsec1 .trashicon .fa-trash-alt {
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+}
+
+.checkout .shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  border-top: thin #a8a8a8 solid;
+}
+
+.checkout .shipping h6 {
+  color: #a8a8a8;
+}
+
+.checkout .total {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+.checkout .total .blacktotal {
+  font-size: 1.5em;
+}
+
+.checkout .total .blacktotal h3 {
+  color: black;
+  font-weight: bolder;
+}
+
+.checkout .total h3 {
+  font-weight: 900;
+  color: #37884e;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.layer-add {
+  padding: 1em 2em;
+}
+
+.layer-add .header {
+  text-align: center;
+  padding: 1em;
+}
+
+.layer-add .subtitle {
+  padding-top: 1em;
+}
+
+.layer-add .productimage {
+  margin-top: 2em;
+}
+
+.layer-add .productimage .fa-camera-retro {
+  padding: .9em 1.5em;
+  border: thin #a8a8a8 solid;
+  border-radius: 0 0 0 1em;
+  color: #a8a8a8;
+  margin: 1em 0em;
+}
+
+.layer-add .form-group {
+  margin-bottom: 1em;
+}
+
+.layer-add .form-group label {
+  display: block;
+  padding-bottom: 0.3em;
+}
+
+.layer-add .form-group input {
+  padding: .5em;
+  border: thin #a8a8a8 solid;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.layer-add .form-group textarea {
+  width: 100%;
+  border: thin #a8a8a8 solid;
+  border-radius: 3px;
+}
+
+.layer-add .secbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3em 2em;
+}
+
+.layer-add .secbutton .btn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+  padding: .7em;
+  border: thin #a8a8a8 solid;
+  border-radius: .5em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -22,6 +22,16 @@ $main-green-color: #37884e;
             border-radius: 22px;
 }
 
+@mixin trash_icon{
+        border-radius: 50%;
+        background-color: black;
+        color:white;
+        font-size: 1em;
+        padding:1em;
+
+    
+}
+
 *{
 	margin:0;
 	padding:0;
@@ -57,6 +67,7 @@ h1{
         padding-left: 0.5em;
     }
 }
+
 //background-shape for profile---------
 @mixin backshape {
     background-image: linear-gradient(130deg,transparent 25em, white 25em),
@@ -64,6 +75,18 @@ h1{
 }
 
 //product thumbnail groball--------------------
+
+h3{
+    font-size: 1em;
+    font-weight: bolder;
+
+}
+h6{
+    font-size: .9em;
+    font-weight: bolder;
+    color: $main-gray-color;
+}
+
 .browse-container{
     // border: 1px red solid;
     display: flex;
@@ -442,6 +465,7 @@ h1{
         }
     }
 }
+
 ///profile------------------------
 .profile{
     @include backshape;
@@ -634,3 +658,180 @@ h1{
     }
 
 }
+
+//my chart page------------------------------------
+.checkout{
+    .main-checkout{
+        padding:1em;
+    }
+        border: thin $main-gray-color solid;
+     
+        .header{
+            text-align: center;
+            padding: 1em;
+            // border: thin grey solid;
+           
+            
+        }
+        .subtitle{
+            padding-top: 1em;
+        }
+        .layerone{
+    
+            border-bottom: 1px $main-light-color solid;
+    
+        .cartsec1{
+            display: flex;
+            // border: thin yellow solid;
+            height: 25vh;
+            position: relative;
+        .cartpic{
+            flex: 0 0 40%;
+            // border: thin blue  solid;
+    
+            padding:1em;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+
+            }
+        .cartdes{
+                padding-left:1em;
+                flex: 0 0 60%;
+                // border: thin red  solid;
+                h3{
+                    font-weight: 900;
+                    margin-top:3em;
+                }
+                h6{
+                    padding-top: 1em;
+                 
+                    color:$main-light-color;
+                }
+            }
+
+            .price{
+                color:$main-green-color;
+                font-weight: bolder;
+
+            }
+        
+            .trashicon{
+                position: absolute;
+                bottom: 11%;
+                right:10%;
+                    
+              
+                   
+                .fa-trash-alt{
+
+                   @include trash_icon;
+             
+                }
+            } 
+
+        }
+    
+    }
+    .shipping{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        border-top: thin $main-light-color solid;
+        h6{
+            color:$main-light-color;
+        }
+    }
+    .total{
+        padding:0 1em;
+        display: flex;
+        justify-content: space-between;
+    
+        margin-bottom: 5em;
+        .blacktotal{
+            font-size: 1.5em;
+            h3{
+                color:black;
+                font-weight: bolder;
+            }
+        }
+        h3{
+            font-weight: 900;
+            color:$main-green-color;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+      
+      
+        
+    }
+  
+}
+//------------------add listing page-------------
+.layer-add{
+
+    padding:1em 2em;
+    .header{
+        text-align: center;
+        padding: 1em;
+        // border: thin grey solid;
+       
+        
+    }
+    .subtitle{
+        padding-top: 1em;
+    }
+    .productimage{
+        margin-top: 2em;
+        
+        .fa-camera-retro{
+            padding:.9em 1.5em;
+            border: thin $main-light-color solid;
+            border-radius: 0 0 0 1em;
+            color: $main-light-color;
+            margin: 1em 0em;
+        
+        }
+    }
+    .form-group{
+        margin-bottom: 1em;
+        label{
+            display: block;
+            padding-bottom: 0.3em;
+        }
+        input{
+            padding: .5em;
+            border:thin $main-light-color solid;
+            border-radius: 3px;
+            width:100%;
+          
+        }
+        textarea{
+            width:100%;
+            border: thin $main-light-color solid;
+            border-radius: 3px;
+        }
+        
+      
+        
+    }
+    .secbutton{
+        display:flex;
+        justify-content: space-between;
+        margin: 3em 2em;
+      
+        .btn{
+            flex: 0 0 45%;
+    
+            padding:.7em;
+            border:thin $main-light-color solid;
+            border-radius: .5em;
+           
+            
+        }
+    }
+
+
+}
+
