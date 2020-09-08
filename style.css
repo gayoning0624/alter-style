@@ -181,7 +181,7 @@ h6 {
   width: 90%;
 }
 
-.home .bottons .signup-btn {
+.home .buttons .signup-btn {
   display: block;
   width: 80%;
   margin: auto;
@@ -194,7 +194,7 @@ h6 {
   background: #ffffff;
 }
 
-.home .bottons .login-btn {
+.home .buttons .login-btn {
   display: block;
   width: 80%;
   margin: auto;
@@ -718,16 +718,8 @@ h6 {
   color: #696969;
 }
 
-.checkout {
-  border: thin #696969 solid;
-}
-
 .checkout .main-checkout {
-  padding: 1em;
-}
-
-.checkout .header {
-  text-align: center;
+  margin-top: 3em;
   padding: 1em;
 }
 
@@ -837,24 +829,24 @@ h6 {
   font-weight: bolder;
 }
 
-.layer-add {
+.add {
+  overflow: hidden;
+}
+
+.add .main-add {
   padding: 1em 2em;
+  margin-top: 3em;
 }
 
-.layer-add .header {
-  text-align: center;
-  padding: 1em;
-}
-
-.layer-add .subtitle {
+.add .subtitle {
   padding-top: 1em;
 }
 
-.layer-add .productimage {
+.add .productimage {
   margin-top: 2em;
 }
 
-.layer-add .productimage .fa-camera-retro {
+.add .productimage .fa-camera-retro {
   padding: .9em 1.5em;
   border: thin #a8a8a8 solid;
   border-radius: 0 0 0 1em;
@@ -862,29 +854,30 @@ h6 {
   margin: 1em 0em;
 }
 
-.layer-add .form-group {
+.add .form-group {
   margin-bottom: 1em;
 }
 
-.layer-add .form-group label {
+.add .form-group label {
   display: block;
   padding-bottom: 0.3em;
 }
 
-.layer-add .form-group input {
+.add .form-group input {
   padding: .5em;
   border: thin #a8a8a8 solid;
   border-radius: 3px;
   width: 100%;
 }
 
-.layer-add .form-group textarea {
+.add .form-group textarea {
   width: 100%;
   border: thin #a8a8a8 solid;
   border-radius: 3px;
+  resize: none;
 }
 
-.layer-add .secbutton {
+.add .secbutton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,7 +887,7 @@ h6 {
   margin: 3em 2em;
 }
 
-.layer-add .secbutton .btn {
+.add .secbutton .btn {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;

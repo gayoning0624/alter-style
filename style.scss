@@ -198,7 +198,7 @@ h6{
         width:90%;
         
     }
-    .bottons{
+    .buttons{
         .signup-btn{
             @include btns;
             background: $main-white-color;
@@ -662,76 +662,69 @@ h6{
 //my chart page------------------------------------
 .checkout{
     .main-checkout{
+        margin-top: 3em;
         padding:1em;
     }
-        border: thin $main-gray-color solid;
      
-        .header{
-            text-align: center;
-            padding: 1em;
-            // border: thin grey solid;
-           
+    .subtitle{
+        padding-top: 1em;
+    }
+    .layerone{
+
+        border-bottom: 1px $main-light-color solid;
+
+    .cartsec1{
+        display: flex;
+        // border: thin yellow solid;
+        height: 25vh;
+        position: relative;
+    .cartpic{
+        flex: 0 0 40%;
+        // border: thin blue  solid;
+
+        padding:1em;
+            img{
+                display: block;
+                width: 100%;
+            }
+
+        }
+    .cartdes{
+            padding-left:1em;
+            flex: 0 0 60%;
+            // border: thin red  solid;
+            h3{
+                font-weight: 900;
+                margin-top:3em;
+            }
+            h6{
+                padding-top: 1em;
+                
+                color:$main-light-color;
+            }
+        }
+
+        .price{
+            color:$main-green-color;
+            font-weight: bolder;
+
+        }
+    
+        .trashicon{
+            position: absolute;
+            bottom: 11%;
+            right:10%;
+                
             
-        }
-        .subtitle{
-            padding-top: 1em;
-        }
-        .layerone{
-    
-            border-bottom: 1px $main-light-color solid;
-    
-        .cartsec1{
-            display: flex;
-            // border: thin yellow solid;
-            height: 25vh;
-            position: relative;
-        .cartpic{
-            flex: 0 0 40%;
-            // border: thin blue  solid;
-    
-            padding:1em;
-                img{
-                    display: block;
-                    width: 100%;
-                }
+                
+            .fa-trash-alt{
 
+                @include trash_icon;
+            
             }
-        .cartdes{
-                padding-left:1em;
-                flex: 0 0 60%;
-                // border: thin red  solid;
-                h3{
-                    font-weight: 900;
-                    margin-top:3em;
-                }
-                h6{
-                    padding-top: 1em;
-                 
-                    color:$main-light-color;
-                }
-            }
+        } 
 
-            .price{
-                color:$main-green-color;
-                font-weight: bolder;
-
-            }
-        
-            .trashicon{
-                position: absolute;
-                bottom: 11%;
-                right:10%;
-                    
-              
-                   
-                .fa-trash-alt{
-
-                   @include trash_icon;
-             
-                }
-            } 
-
-        }
+    }
     
     }
     .shipping{
@@ -769,15 +762,11 @@ h6{
   
 }
 //------------------add listing page-------------
-.layer-add{
-
-    padding:1em 2em;
-    .header{
-        text-align: center;
-        padding: 1em;
-        // border: thin grey solid;
-       
-        
+.add{
+    overflow: hidden;
+    .main-add{
+        padding:1em 2em;
+        margin-top: 3em;
     }
     .subtitle{
         padding-top: 1em;
@@ -811,6 +800,7 @@ h6{
             width:100%;
             border: thin $main-light-color solid;
             border-radius: 3px;
+            resize: none;
         }
         
       
