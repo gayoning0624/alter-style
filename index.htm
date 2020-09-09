@@ -263,7 +263,6 @@
             <div class="main-header">
                 <div class="headerback"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></div>
                 <img src="assets/logo-white.png" alt="logoimg" class="headerlogo">
-                
             </div>
             <div class="profilehead">
                 <img src="assets/profile.jpeg" alt="profileimg" class="profileimg">
@@ -351,12 +350,12 @@
         </div>
 
 
-        <div class="layer detail">
+        <div class="layer detail ">
+            <div class="main-header">
+                <div class="headerback"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></div>
+                <img src="assets/logo-white.png" alt="logoimg" class="headerlogo">
+            </div>
             <div class="item-detail-img-container">
-                <div class="backicon">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-left"></i>
-                </div>
                 <img src="assets/jacket.jpg" alt="product">
             </div>
             <div class="item-detail-content-wrap">
@@ -410,12 +409,6 @@
                         <p class="item-review-title">
                             Reviews
                         </p>
-                        <div class="add-review-btn">
-                            <p class="review-text">Add New Review</p>
-                            <div class="plus-icon">
-                                <img src="/assets/plus.svg" alt="add">
-                            </div>
-                        </div>
                     </div>
                     <div class="item-reviewlist-container">
                         <div class="review-container">
@@ -427,17 +420,31 @@
                                     <div class="review-user-name">
                                         Ruel Vincent
                                     </div>
-                                    <div class="review-rating">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/star.svg" alt="star">
-                                    </div>
                                 </div>
                             </div>
-                            <div class="review-comment">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus mauris, sollicitudin sed sodales eu, vehicula eu nibh. Sed ut lectus nulla. Sed fringilla iaculis ante vel viverra. Nulla semper mauris ut lorem molestie, sit amet faucibus augue congue.
+                            <div class="new-review-rating">
+                                <p class="new-review-rating-title">
+                                    Rating
+                                </p>
+                                <img src="/assets/star.svg" alt="star">
+                                <img src="/assets/star.svg" alt="star">
+                                <img src="/assets/star.svg" alt="star">
+                                <img src="/assets/star.svg" alt="star">
+                                <img src="/assets/star.svg" alt="star">
+                            </div>
+                            <div class="review-comment new-review">
+                                <p class="new-review-rating-title">
+                                    Comments
+                                </p>
+                                <textarea name="new_review" id="new_review"></textarea>
+                            </div>
+                            <div class="global-btns">
+                                <button class="delete-btn">
+                                    Cancel
+                                </button>
+                                <button class="save-btn">
+                                    Submit
+                                </button>
                             </div>
                         </div>
                         <div class="review-container">
@@ -457,33 +464,16 @@
                                         <img src="/assets/star.svg" alt="star">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-comment">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus mauris, sollicitudin sed sodales eu, vehicula eu nibh. Sed ut lectus nulla. Sed fringilla iaculis ante vel viverra. Nulla semper mauris ut lorem molestie, sit amet faucibus augue congue.
-                            </div>
-                        </div>
-                        <div class="review-container">
-                            <div class="review-user-info-container">
-                                <div class="review-user-dp">
-                                    <img src="/assets/user1.jpeg" alt="user">
-                                </div>
-                                <div class="review-header">
-                                    <div class="review-user-name">
-                                        Ruel Vincent
-                                    </div>
-                                    <div class="review-rating">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/starFilled.svg" alt="star">
-                                        <img src="/assets/star.svg" alt="star">
-                                    </div>
+                                <div class="comment-header-btn-container">
+                                    <i class="far fa-trash-alt"></i>
+                                    <i class="fas fa-pen"></i>
                                 </div>
                             </div>
                             <div class="review-comment">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus mauris, sollicitudin sed sodales eu, vehicula eu nibh. Sed ut lectus nulla. Sed fringilla iaculis ante vel viverra. Nulla semper mauris ut lorem molestie, sit amet faucibus augue congue.
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -503,7 +493,7 @@
             </div>
         </div>
 
-        <div class="layer add">
+        <div class="layer add active">
             <div class="main-header">
                 <div class="headerback"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></div>
                 <img src="assets/logo-black.png" alt="logoimg" class="headerlogo">
@@ -514,7 +504,9 @@
                 </div>
                 <div class="productimage">
                     <h3>Product Image</h3>
-                    <i class="fas fa-camera-retro"></i>
+                    <label for="upload_file" class="custom-file-upload"><i class="fas fa-camera-retro"></i></label>
+                    <input type="file" name="upload_file" id="upload_file" >
+                    
                 </div>
         
                 <form>
@@ -539,9 +531,9 @@
                         <!-- <input type="shipping" class="form-control" id="exampleInputShipping" placeholder="Enter Shipping Info"> -->
                         <textarea name="shipping" id="shipping" cols="30" rows="5"></textarea>
                     </div>
-                    <div class="secbutton">
-                        <button type="submit" class="btn btn-cancel">Cancel</button>
-                        <button type="submit" class="btn btn-add">Add</button>
+                    <div class="global-btns">
+                        <button type="submit" class="delete-btn">Cancel</button>
+                        <button type="submit" class="save-btn">Add</button>
                     </div>
                 </form>
             </div>
@@ -561,12 +553,12 @@
             </div>
         </div>
 
-        <div class="layer edit">
+        <div class="layer edit ">
+            <div class="main-header">
+                <div class="headerback"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></div>
+                <img src="assets/logo-white.png" alt="logoimg" class="headerlogo">
+            </div>
             <div class="item-detail-img-container">
-                <div class="backicon">
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-left"></i>
-                </div>
                 <img src="assets/jacket.jpg" alt="product">
             </div>
             <div class="item-detail-content-wrap">
@@ -711,7 +703,7 @@
                 <img src="assets/logo-black.png" alt="logoimg" class="headerlogo">
             </div>
             <div class="setting-list">
-                <h1><i class="fas fa-cog"></i> Settings</h1>
+                <h1>Settings<i class="fas fa-cog"></i></h1>
                 <ul>
                     <li>Accounts<i class="fas fa-chevron-right"></i></li>
                     <li>Payment<i class="fas fa-chevron-right"></i></li>
@@ -737,7 +729,7 @@
             </div>
         </div>
 
-        <div class="layer checkout active">
+        <div class="layer checkout ">
             <div class="main-header">
                 <div class="headerback"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></div>
                 <img src="assets/logo-black.png" alt="logoimg" class="headerlogo">
@@ -747,7 +739,7 @@
                 <div class="subtitle">
                     <h1>My Cart</h1>
                 </div>
-                <div class="layerone ">
+                <div class="cart-item item-one">
                     <div class="cartsec1">
                         <div class="cartpic">
                             <img src="assets/jacket.jpg" alt="">
@@ -755,7 +747,25 @@
                         <div class="cartdes">
                             <h3>Customized Jacket Title</h3>
                             <h6>Ruel Vincent</h6>
-                            <h3 class="price">$75</h3>
+                            <h3 class="price">$75.00</h3>
+                           
+                            <div class="trashicon">
+                                <i class="far fa-trash-alt"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                </div>
+                <div class="cart-item item-one ">
+                    <div class="cartsec1">
+                        <div class="cartpic">
+                            <img src="assets/jacket.jpg" alt="">
+                        </div>
+                        <div class="cartdes">
+                            <h3>Customized Jacket Title</h3>
+                            <h6>Ruel Vincent</h6>
+                            <h3 class="price">$75.00</h3>
                            
                             <div class="trashicon"><i class="far fa-trash-alt"></i></div>
                           
@@ -764,7 +774,7 @@
                     </div>
     
                 </div>
-                <div class="layerone ">
+                <div class="cart-item item-one ">
                     <div class="cartsec1">
                         <div class="cartpic">
                             <img src="assets/jacket.jpg" alt="">
@@ -772,7 +782,7 @@
                         <div class="cartdes">
                             <h3>Customized Jacket Title</h3>
                             <h6>Ruel Vincent</h6>
-                            <h3 class="price">$75</h3>
+                            <h3 class="price">$75.00</h3>
                            
                             <div class="trashicon"><i class="far fa-trash-alt"></i></div>
                           
@@ -781,28 +791,11 @@
                     </div>
     
                 </div>
-                <div class="layerone ">
-                    <div class="cartsec1">
-                        <div class="cartpic">
-                            <img src="assets/jacket.jpg" alt="">
-                        </div>
-                        <div class="cartdes">
-                            <h3>Customized Jacket Title</h3>
-                            <h6>Ruel Vincent</h6>
-                            <h3 class="price">$75</h3>
-                           
-                            <div class="trashicon"><i class="far fa-trash-alt"></i></div>
-                          
-                        </div>
-                        
-                    </div>
-    
-                </div>
-                <div class="layerone-total ">
-                    <div class="cartsec1 ptotal">
+                <div class="cart-item-total">
+                    <div class="cartsec1 total-container">
                         <div class="shipping">
                             <h6>Shipping:</h6>
-                            <h6>$15</h6>
+                            <h6>$15.00</h6>
                         </div>
                         <div class="total">
                             <div class="blacktotal">
@@ -810,8 +803,6 @@
                             </div>
                             <h3>$290.00</h3>
                         </div>
-                        
-                        
                     </div>
                 </div>
             </div>
